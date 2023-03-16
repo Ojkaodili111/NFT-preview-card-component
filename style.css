@@ -1,0 +1,143 @@
+/* 
+font-family: 
+'Fraunces', serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Overpass', sans-serif;
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+:root{
+  --main-BG:  hsl(217, 54%, 11%);
+    --card-BG:hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+}
+body{
+    background-color:var(--main-BG);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:
+    375px;
+    background-color: var(--card-BG);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    
+}
+.img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.image{
+    position: relative;
+    
+}
+.avatar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Cyan);
+    opacity: 0;
+    transition: 200ms ease-in;
+   }
+
+.avatar:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius:10px ;
+}
+.avatar img{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+h3{
+    color: var(--white);
+
+    font-weight: 600;
+
+}
+h3:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    color: var(--Soft-blue);
+    
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.eth-amount{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+.days-left{
+    color: var(--Soft-blue);
+    
+}
+hr{
+    border: 0.5px var(--line) solid;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    font-size: 0.9em;
+}
+.footer-img{
+    width: 12%;
+    border: 1px 
+    white solid;
+    border-radius: 50%;
+}
+
+.footer-text{
+    position: relative;
+    right: 5.4em;
+    top: 0.5em;
+    letter-spacing: 0.3;
+}
+.footer-cnt{
+    color: var(--white);
+    font-weight:300 ;
+}
+.footer-cnt:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 20rem;
+ }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+     }
+  @media screen and (max-width:1440px) {
+
+    
+  }
